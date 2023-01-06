@@ -601,6 +601,10 @@
 .footer__column-link {
   color: white;
   text-decoration: none;
+  transition: opacity 1s linear;
+}
+.footer__column-link:hover {
+  opacity: 0.5;
 }
 
 .footer__column-heading {

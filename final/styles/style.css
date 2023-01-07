@@ -143,13 +143,11 @@
 }
 
 /*bagian techniques*/
-* {
-  box-sizing: border-box;
-}
 .techniques {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+
 .techniques-title {
   margin: auto;
   text-align: center;
@@ -168,32 +166,20 @@
   font-weight: normal;
 }
 
-.cards::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.cards {
-  width: 920px;
-  margin: auto;
-}
-
 .cards__item {
-  float: left;
+  width: 920px;
+  max-width: 33%;
   margin: auto;
-  display: block;
-  width: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cards__image {
-  border-radius: 50%;
-
   width: 160px;
   height: 160px;
   margin: 60px 40px 43px;
-  display: block;
-  display: flex;
-  justify-content: center;
+  border-radius: 50%;
 }
 
 .cards__title {

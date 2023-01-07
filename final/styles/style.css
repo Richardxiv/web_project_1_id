@@ -1,0 +1,645 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page {
+  min-width: 1100px;
+  /* we don't know how to make mobile versions of websites yet, */
+  /* so here we've set a minimum page width */
+  max-width: 1600px;
+  /* here we've set a maximum page width */
+  margin: 0 auto;
+  /* this ensures that all content is centered on screens wider than 1600px */
+  font-family: "Helvetica Neue", "Arial", "sans-serif";
+}
+
+.header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  background-color: #f2f2f2;
+  position: relative;
+  overflow: hidden;
+  /* parameters for the header section */
+}
+.logo_place_header {
+  width: 154px;
+  height: 31px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  z-index: 100;
+}
+
+.header__title {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 730px;
+  z-index: 99;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  padding-top: 30vh;
+  padding: 250px 0;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 98;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__link {
+  color: #2f80ed;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  position: absolute;
+  left: 64px;
+  bottom: 10px;
+  transition: opacity 1s linear;
+}
+.header__link:hover {
+  opacity: 0.5;
+}
+
+.header__main-illustration {
+  width: 756px;
+  height: 608px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  z-index: 98;
+}
+
+/* here we have two examples of selectors in order to remind you how to set styles for elements */
+.header__square-pic {
+  height: 568px;
+  width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0px;
+  top: 64px;
+  z-index: 97;
+  transform: rotate(-15deg);
+  animation: rotation 20s linear infinite;
+}
+
+/*bagian description*/
+
+.description {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+
+.two-column__brief {
+  float: left;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-column__main-text {
+  float: right;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-column__paragraph {
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.two-column__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/*bagian techniques*/
+.techniques {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.techniques-title {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.techniques-subtitle {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  padding-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.cards__item {
+  width: 920px;
+  max-width: 33%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 60px 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  margin: auto;
+  text-align: center;
+  padding: 0px 50px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.cards__description {
+  margin: auto;
+  text-align: center;
+  padding: 16px 50px 0px;
+  vertical-align: top;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*bagian video*/
+.video {
+  padding-top: 100px;
+}
+
+.video__title {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.video__subtitle {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.video__iframes {
+  display: flex;
+  margin: 50px auto -75px;
+  justify-content: center;
+  border: 0px;
+}
+.video__iframe {
+  margin: 10px;
+  justify-content: center;
+  width: 515px;
+  height: 316px;
+  border: 0px;
+}
+
+/*bagian oakley*/
+.oakley {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+.two-columns__oakley {
+  float: left;
+  width: 175px;
+  margin: auto;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+.two-columns__main-text {
+  float: right;
+  width: 784px;
+}
+
+.two-columns__paragraph {
+  min-width: 784px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 30px;
+}
+/*bagian digits*/
+
+.digits {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.digits-title {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.digits-subtitle {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table__cell {
+  justify-content: center;
+  margin: auto;
+  padding-top: 60px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.table__heading {
+  width: 397px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.table__text {
+  padding-top: 20px;
+  width: 25%;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+.table__text-break {
+  width: 277px;
+  padding-top: 20px;
+}
+
+/*bagian khan*/
+.khan {
+  padding-top: 105px;
+  overflow: scroll;
+  background-color: #f2f2f2;
+}
+.khan__container {
+  margin: 0px auto;
+  text-align: left;
+  width: 80%;
+}
+.khan__author {
+  margin: 0px;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.khan__title {
+  margin: 0px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.khan__quote {
+  margin: 0px;
+  width: 790px;
+  padding-top: 50px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.khan__quote-author {
+  padding-top: 36px;
+  margin: 0px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.khan__quote-author-subline {
+  padding-top: 10px;
+  margin: 0px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+.book__container {
+  padding-top: 68px;
+  vertical-align: middle;
+}
+.book__pic {
+  float: left;
+  width: 620px;
+  height: 608px;
+  margin: auto;
+  z-index: 1000;
+  margin-right: 48px;
+}
+.buy__link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  text-decoration: none;
+  transition: opacity 1s linear;
+  color: #2f80ed;
+}
+.buy__link:hover {
+  opacity: 0.5;
+}
+
+/*bagian feynman*/
+
+.feynman {
+  position: relative;
+  height: 790px;
+  background-color: #f2f2f2;
+  padding-top: 100px;
+  background-image: url(../images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0px left 0px;
+}
+.feynman__title {
+  width: 775px;
+  text-align: center;
+  margin: auto;
+  z-index: 100;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+.feynman__subtitle {
+  margin: auto;
+  text-align: center;
+  z-index: 99;
+  padding-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+.feynman__link {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  transition: opacity 1s linear;
+}
+.feynman__link:hover {
+  opacity: 0.5;
+}
+
+/*bagian kaufman*/
+.kaufman {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.kaufman-title_themed_dark {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  z-index: 95;
+  position: relative;
+}
+
+.kaufman-subtitle_themed_dark {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  z-index: 94;
+  position: relative;
+}
+/* including elements with key-value modifiers */
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.table__cell_themed_dark {
+  padding-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  z-index: 89;
+  position: relative;
+  margin: 0px 100px;
+}
+.table__heading_themed_dark {
+  color: white;
+  text-align: left;
+  z-index: 92;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.table__text_themed_dark {
+  color: white;
+  text-align: left;
+  width: 20%;
+  z-index: 91;
+  padding-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  vertical-align: top;
+}
+
+.kaufman-triangle {
+  position: absolute;
+  top: 0;
+  right: -124px;
+  animation: rotation 20s linear infinite;
+}
+/*bagian resources*/
+.resources {
+  padding-top: 100px;
+  padding-bottom: 127px;
+  margin: auto;
+}
+.resources__title {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.resources__subtitle {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  padding-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.logo__zone {
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1100px;
+  padding-top: 80px;
+  transition: opacity 1s linear;
+}
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  transition: opacity 1s linear;
+}
+.resources__logo:hover {
+  opacity: 0.5;
+}
+/*bagian footer*/
+.footer {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-height: 350px;
+  background-color: black;
+  position: relative;
+}
+
+.footer__column {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+
+.logo_place_footer {
+  display: flex;
+  width: 183px;
+  height: 35px;
+  position: absolute;
+  top: 64px;
+}
+
+.footer__column_content_about {
+}
+
+.footer__column_content_socials {
+}
+
+.footer__column_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+}
+
+.footer__list {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 20px;
+  margin: auto;
+}
+.footer__column-link {
+  color: white;
+  text-decoration: none;
+  transition: opacity 1s linear;
+}
+.footer__column-link:hover {
+  opacity: 0.5;
+}
+
+.footer__column-heading {
+  margin: auto;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer__author {
+  position: absolute;
+  bottom: 100px;
+  margin: auto;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__social-icons {
+  padding-right: 10px;
+}
+
+.old__page {
+  background-color: #808080;
+  height: 2px;
+  border: none;
+  margin: 0px;
+}
+.new__page {
+  background-color: #2f80ed;
+  height: 2px;
+  border: none;
+  margin: 0px;
+}
